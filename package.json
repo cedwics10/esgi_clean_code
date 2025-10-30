@@ -1,0 +1,22 @@
+{
+  "name": "esgi_clean_code",
+  "version": "1.0.0",
+  "description": "<i> Student name : Cédric VONIN</i>",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedwics10/esgi_clean_code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cedwics10/esgi_clean_code/issues"
+  },
+  "homepage": "https://github.com/cedwics10/esgi_clean_code#readme",
+  "dependencies": {
+    "vitest": "^4.0.5"
+  }
+}

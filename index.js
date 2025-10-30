@@ -1,0 +1,4 @@
+function computeYamsScoreOf(throws)
+{
+return ;
+}
