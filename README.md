@@ -7,11 +7,11 @@ Here is my submit for the exam of clean code. This tests
 consists in writing the code of (X) by steps, with the TDD
 technique.
 
-<h2>How to run it ?</h2>
-<h3>Code</h3>
-node index.js
+Tested :
+- Values depending on number of doubles
+- Sum of $uniqueThrow equals $expected
 
-<h3>Test</h3>
+<h3>How to run the tests</h3>
 npm run test
 
 
