@@ -6,14 +6,14 @@ function computeTotalScoreOf(setOfthrows) {
     
     const histogram = {};
 
-    for (let i = 0; i < NUMBER_OF_DICE; i++) {
-        const diceValue = setOfthrows[i];
+    for (let index = 0; index < NUMBER_OF_DICE; index++) {
+        const diceValue = setOfthrows[index];
         histogram[diceValue] = (histogram[diceValue] || 0) + 1;
     }
 
     const maxOccurrences = Math.max(...Object.values(histogram));
 
-    const sumOfDice = setOfthrows.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    const sumOfDice = setOfthrows.reduce((accumulator, currentValue) => accumulator + diceValue, 0);
 
     return SCORE_BY_OCCURRENCES[maxOccurrences] ?? sumOfDice;
 }
