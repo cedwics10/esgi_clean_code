@@ -13,3 +13,12 @@ describe('Values depending on number of doubles', () => {
         expect(total).toBe(expected);
     });
 });
+
+describe('Values when no figure', () => {
+    it.each([
+        { uniqueThrow: [1, 2, 3, 4, 2], expected: 12 },
+    ])('Sum of $uniqueThrow equals $expected', ({ uniqueThrow, expected }) => {
+        let total = computeTotalScoreOf(uniqueThrow);
+        expect(total).toBe(expected);
+    });
+});

@@ -1,6 +1,6 @@
 const NUMBER_OF_DICE = 5;
 
-const SCORE_BY_OCCURENCES = { 3: 28, 4: 35, 5: 50 };
+const SCORE_BY_OCCURRENCES = { 3: 28, 4: 35, 5: 50 };
 
 function computeTotalScoreOf(setOfthrows) {
     
@@ -13,7 +13,9 @@ function computeTotalScoreOf(setOfthrows) {
 
     const maxOccurrences = Math.max(...Object.values(histogram));
 
-    return SCORE_BY_OCCURENCES[maxOccurrences] ?? 50;
+    const sumOfDice = setOfthrows.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+    return SCORE_BY_OCCURRENCES[maxOccurrences] ?? sumOfDice;
 }
 
 export { computeTotalScoreOf };
